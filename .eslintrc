@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true
+  },
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "no-console": 0,
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1
+  },
+  "globals": {
+    "module": true,
+    "require": true,
+    "console": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
