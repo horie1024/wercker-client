@@ -1,0 +1,29 @@
+import request from "request";
+declare class Class0 {
+
+  headers: {Authorization: string, "Content-Type": string, "User-Agent": string};
+  constructor(headers: {Authorization: string, "Content-Type": string, "User-Agent": string}): void;
+  listUserApplications(params: {username: string}): Promise<Array<{createdAt: string, id: string, name: string, owner: {avatar: {gravatar: string}, meta: {username: string, werckerEmployee: boolean}, name: string, type: string, userId: string}, privacy: string, stack: number, url: string}>>;
+}
+declare class Class1 {
+
+  headers: {Authorization: string, "Content-Type": string, "User-Agent": string};
+  constructor(headers: {Authorization: string, "Content-Type": string, "User-Agent": string}): void;
+  getAllRuns(params?: {[query: "applicationId" | "limit" | "skip" | "sort" | "status" | "result" | "branch" | "pipelineId" | "commit" | "sourceRun" | "author"]: string | number}): Promise<Array<{branch: string, commitHash: string, createdAt: string, finishedAt: string, id: string, message: string, pipeline: {createdAt: string, id: string, name: string, permissions: string, pipelineName: string, setScmProviderStatus: boolean, type: string, url: string}, progress: number, result: string, startedAt: string, status: string, url: string, user: {avatar: {gravatar: string}, meta: {username: string, werckerEmployee: boolean}, name: string, type: string, userId: string}}>>;
+  triggerNewRun(params: {pipelineId: string, [query: "sourceRunId" | "branch" | "commitHash" | "message" | "envVars"]: string | number}): Promise<{branch: string, commitHash: string, createdAt: string, finishedAt: string, id: string, message: string, pipeline: {createdAt: string, id: string, name: string, permissions: string, pipelineName: string, setScmProviderStatus: boolean, type: string, url: string}, progress: number, result: string, startedAt: string, status: string, url: string, user: {avatar: {gravatar: string}, meta: {username: string, werckerEmployee: boolean}, name: string, type: string, userId: string}}>;
+}
+declare class Class2 {
+
+  headers: {Authorization: string, "Content-Type": string, "User-Agent": string};
+  constructor(headers: {Authorization: string, "Content-Type": string, "User-Agent": string}): void;
+  getAllWorkflows(params: {applicationId: string, [query: "limit" | "skip" | "sort"]: string | number}): Promise<Array<{createdAt: string, data: {branch: string, message: string, sourceRunId: string}, id: string, items: [{data: {currentStep: number, pipelineId: string, restricted: string, runId: string, stepName: string, targetName: string, totalSteps: number}, id: string, progress: number, result: string, status: string, type: string, updatedAt: string}], startedAt: string, trigger: string, updatedAt: string, url: string, user: {avatar: {gravatar: string}, meta: {username: string, werckerEmployee: string}, name: string, type: string, userId: string}}>>;
+  getWorkflow(params: {workflowId: string}): Promise<{createdAt: string, data: {branch: string, message: string, sourceRunId: string}, id: string, items: [{data: {currentStep: number, pipelineId: string, restricted: string, runId: string, stepName: string, targetName: string, totalSteps: number}, id: string, progress: number, result: string, status: string, type: string, updatedAt: string}], startedAt: string, trigger: string, updatedAt: string, url: string, user: {avatar: {gravatar: string}, meta: {username: string, werckerEmployee: string}, name: string, type: string, userId: string}}>;
+}
+
+declare export default class Wercker {
+
+  Application: Class0;
+  Runs: Class1;
+  Workflows: Class2;
+  constructor(params: {token: string}): void;
+}
