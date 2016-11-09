@@ -2,6 +2,12 @@
   "name": "wercker-client",
   "version": "0.0.1",
   "description": "Wercker API Client for Node.js",
+  "keywords": [
+    "wercker",
+    "ci",
+    "api",
+    "client"
+  ],
   "main": "lib/Wercker.js",
   "files": [
     "lib"
