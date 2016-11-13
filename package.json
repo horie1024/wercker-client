@@ -1,6 +1,6 @@
 {
   "name": "wercker-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wercker API Client for Node.js",
   "keywords": [
     "wercker",
@@ -32,6 +32,9 @@
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.0",
     "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-plugin-transform-regenerator": "^6.16.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-power-assert": "^1.0.0",
     "babel-register": "^6.18.0",
