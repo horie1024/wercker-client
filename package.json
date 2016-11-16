@@ -1,6 +1,6 @@
 {
   "name": "wercker-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wercker API Client for Node.js",
   "keywords": [
     "wercker",
@@ -26,7 +26,8 @@
     "flow": "flow"
   },
   "dependencies": {
-    "request": "^2.78.0"
+    "request": "^2.78.0",
+    "babel-runtime": "^6.18.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

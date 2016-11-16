@@ -16,7 +16,7 @@ npm install wercker-client --save
 ## Usage
 
 ```javascript
-var Wercker = require('wercker-client');
+var Wercker = require('wercker-client').default;
 var wercker = new Wercker({
   token: 'your_token'
 });
