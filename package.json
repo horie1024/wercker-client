@@ -1,6 +1,6 @@
 {
   "name": "wercker-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Wercker API Client for Node.js",
   "keywords": [
     "wercker",

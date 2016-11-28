@@ -1,7 +1,7 @@
 // @flow
 import request from "request";
 
-const version = "0.0.2"
+const version = "0.0.4"
 
 export default class Wercker {
   Application: Application;
@@ -173,9 +173,9 @@ class Request<T> {
       if (response.success()) {
         resolve(response.body);
       } else if (response.clientError()) {
-        reject(new Error(`HTTP client error ${response.statusCode}`)); // TODO return error body.
+        reject(new Error(`HTTP client error ${response.statusCode}. ${response.body.message}`));
       } else if (response.serverError()) {
-        reject(new Error(`HTTP server error ${response.statusCode}`)); // TODO return error body.
+        reject(new Error(`HTTP server error ${response.statusCode}. ${response.body.message}`));
       }
     };
   }
