@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://doge.mit-license.org)
 [![npm version](https://badge.fury.io/js/wercker-client.svg)](https://badge.fury.io/js/wercker-client)
+[![npm](https://img.shields.io/npm/dt/wercker-client.svg)](https://www.npmjs.com/package/wercker-client)
 
 ## Overview
 
